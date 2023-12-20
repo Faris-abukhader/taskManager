@@ -223,4 +223,4 @@ npm run start
 
 ## 📜 License
 
-This software is licensed under the [MIT](https://github.com/Faris-abukhader/WFYB-frontend/blob/main/licence) © [FaRiS](https://github.com/Faris-abukhader).
+This software is licensed under the [MIT](https://github.com/Faris-abukhader/taskManager/blob/main/LICENSE) © [FaRiS](https://github.com/Faris-abukhader).

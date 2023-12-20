@@ -6,7 +6,7 @@
 - [Introduction](#--introduction)
 - [Installation](#--installation)
 - [Development setup](#--development-setup)
-- [Runnnig the projects](#--runing-the-projects)
+- [Runnnig the projects](#--running-the-projects)
 - [License](#--license)
 
 

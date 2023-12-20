@@ -1,0 +1,44 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Todo {
+  id         String       @id @default(cuid())
+  userId     String
+  categoryId String
+  content    String
+  isDone     Boolean      @default(false)
+  prioerity  Int
+  createdAt  DateTime     @default(now())
+  user       User         @relation(fields: [userId], references: [id])
+  category   TodoCategory @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+
+  @@index([id])
+  @@index([userId])
+}
+
+model TodoCategory {
+  id       String @id @default(cuid())
+  title    String
+  ownerId  String
+  owner    User   @relation(fields: [ownerId], references: [id], onDelete: Cascade)
+  todoList Todo[]
+
+  @@unique([title, ownerId])
+  @@index([id])
+}
+
+model User {
+  id               String         @id @default(cuid())
+  name             String
+  todoList         Todo[]
+  createdAt        DateTime       @default(now())
+  todoCategoryList TodoCategory[]
+
+  @@index([id])
+}

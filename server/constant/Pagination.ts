@@ -1,0 +1,1 @@
+export const TodoMiniPagination = 6;

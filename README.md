@@ -7,7 +7,7 @@
 - [Installation](#--installation)
 - [Development setup](#--development-setup)
 - [Runnnig the projects](#--running-the-projects)
-- [License](#--license)
+- [License](#-license)
 
 
 ## <img src="https://cdn-icons-png.flaticon.com/512/1436/1436664.png" width="25" height="25" style="padding-right:15px">  Introduction 
